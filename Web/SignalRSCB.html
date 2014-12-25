@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Application</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/SCB.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.fittext.js"></script>
+    <script src="../Scripts/jquery.slabtext.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/jquery.signalR-2.0.2.min.js"></script>
+    <script src="../Scripts/ejs_production.js"></script>
+    <script src="http://10.7.6.21:8080/signalr/hubs"></script>
+    <script>
+            $.connection.hub.url = "http://10.7.6.21:8080/signalr";
+    </script>
+    <script src="../Scripts/jquery.cookie.js"></script>
+    <script src="../Scripts/CIS/Tools.js"></script>
+    <script src="../Scripts/CIS/Layout.js"></script>
+    <script src="../Scripts/CIS/SCB.js"></script>
+</head>
+
+<body>
+    <div id ="wrap">
+        <div id="header">
+            <div id="h_left"></div>
+            <div id="h_center">
+                <p id="title"><p>
+                <p id="subtitle"><p>
+            </div>
+            <div id="h_right"></div>
+            <div id="h_bjclock"></div>
+        </div>
+        <div id ="RunningResult"></div>
+        <div id ="SCB">
+            <!--Loading...-->
+        </div>
+        </div>
+    </div>
+</body>
+</html>
